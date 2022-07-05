@@ -1,0 +1,380 @@
+/*
+ Theme Name:   XRG El Torito Theme
+ Description:  Theme for Xperience Restaurant Group
+ Author:       North Street Creative
+ Author URI:   https://northstreetcreative.com/
+ Template:     ns-core-theme
+ Version:      1
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  xrg-corporate-theme
+*/
+
+/* Catering and Event Dropdown  */
+#rc-portal .rc-loading {
+    background: transparent !important;
+}
+
+/* -----------------------------------------------------------------------------
+MANUAL UPDATE HISTORY
+----------------------------------------------------------------------------- */
+/*
+ * aszeto@7/21/2020
+ * pre-release additional CSS elements and specials page additions 
+*/
+
+body.single-specials .special--wrapper {
+    text-align: center;
+    margin-bottom: 25px; 
+}
+
+body.single-specials .special--wrapper.with-background {
+    padding: 30px 20px; 
+}
+@media screen and (min-width: 768px) {
+    body.single-specials .special--wrapper {
+        padding: 50px; 
+    }
+}
+@media screen and (min-width: 1024px) {
+    body.single-specials .special--wrapper {
+        padding: 50px 0;
+    }
+}
+
+body.single-specials .special--wrapper .details {
+	max-width: 80%;
+}
+
+body.single-specials .special--wrapper .specials-image {
+    max-width: initial;
+    margin: 0; 
+}
+
+body.single-specials .special--wrapper .specials-image img {
+    margin: 0 auto 30px; 
+}
+
+.content-module.page-title h1 {
+    padding: 0 20px;
+}
+
+body.template-locations {
+    overflow: hidden !important;
+}
+body.single-locations .location-single .location-buttons .button-group #ot-reservation-widget .ot-button {
+    transition: none;
+}
+
+.ada-caption {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/*
+ * aszeto@8/3/2020
+ * Modal using Magnific Popup library
+*/
+.mfp-bg{top:0;left:0;width:100%;height:100%;z-index:1042;overflow:hidden;position:fixed;background:#0b0b0b;opacity:.8}.mfp-wrap{top:0;left:0;width:100%;height:100%;z-index:1043;position:fixed;outline:0!important;-webkit-backface-visibility:hidden}.mfp-container{text-align:center;position:absolute;width:100%;height:100%;left:0;top:0;padding:0 8px;box-sizing:border-box}.mfp-container:before{content:'';display:inline-block;height:100%;vertical-align:middle}.mfp-align-top .mfp-container:before{display:none}.mfp-content{position:relative;display:inline-block;vertical-align:middle;margin:0 auto;text-align:left;z-index:1045}.mfp-ajax-holder .mfp-content,.mfp-inline-holder .mfp-content{width:100%;cursor:auto}.mfp-ajax-cur{cursor:progress}.mfp-zoom-out-cur,.mfp-zoom-out-cur .mfp-image-holder .mfp-close{cursor:-moz-zoom-out;cursor:-webkit-zoom-out;cursor:zoom-out}.mfp-zoom{cursor:pointer;cursor:-webkit-zoom-in;cursor:-moz-zoom-in;cursor:zoom-in}.mfp-auto-cursor .mfp-content{cursor:auto}.mfp-arrow,.mfp-close,.mfp-counter,.mfp-preloader{-webkit-user-select:none;-moz-user-select:none;user-select:none}.mfp-loading.mfp-figure{display:none}.mfp-hide{display:none!important}.mfp-preloader{color:#ccc;position:absolute;top:50%;width:auto;text-align:center;margin-top:-.8em;left:8px;right:8px;z-index:1044}.mfp-preloader a{color:#ccc}.mfp-preloader a:hover{color:#fff}.mfp-s-ready .mfp-preloader{display:none}.mfp-s-error .mfp-content{display:none}button.mfp-arrow,button.mfp-close{overflow:visible;cursor:pointer;background:0 0;border:0;-webkit-appearance:none;display:block;outline:0;padding:0;z-index:1046;box-shadow:none;touch-action:manipulation}button::-moz-focus-inner{padding:0;border:0}.mfp-close{width:44px;height:44px;line-height:44px;position:absolute;right:0;top:0;text-decoration:none;text-align:center;opacity:.65;padding:0 0 18px 10px;color:#fff;font-style:normal;font-size:28px;font-family:Arial,Baskerville,monospace}.mfp-close:focus,.mfp-close:hover{opacity:1}.mfp-close:active{top:1px}.mfp-close-btn-in .mfp-close{color:#333}.mfp-iframe-holder .mfp-close,.mfp-image-holder .mfp-close{color:#fff;right:-6px;text-align:right;padding-right:6px;width:100%}.mfp-counter{position:absolute;top:0;right:0;color:#ccc;font-size:12px;line-height:18px;white-space:nowrap}.mfp-arrow{position:absolute;opacity:.65;margin:0;top:50%;margin-top:-55px;padding:0;width:90px;height:110px;-webkit-tap-highlight-color:transparent}.mfp-arrow:active{margin-top:-54px}.mfp-arrow:focus,.mfp-arrow:hover{opacity:1}.mfp-arrow:after,.mfp-arrow:before{content:'';display:block;width:0;height:0;position:absolute;left:0;top:0;margin-top:35px;margin-left:35px;border:medium inset transparent}.mfp-arrow:after{border-top-width:13px;border-bottom-width:13px;top:8px}.mfp-arrow:before{border-top-width:21px;border-bottom-width:21px;opacity:.7}.mfp-arrow-left{left:0}.mfp-arrow-left:after{border-right:17px solid #fff;margin-left:31px}.mfp-arrow-left:before{margin-left:25px;border-right:27px solid #3f3f3f}.mfp-arrow-right{right:0}.mfp-arrow-right:after{border-left:17px solid #fff;margin-left:39px}.mfp-arrow-right:before{border-left:27px solid #3f3f3f}.mfp-iframe-holder{padding-top:40px;padding-bottom:40px}.mfp-iframe-holder .mfp-content{line-height:0;width:100%;max-width:900px}.mfp-iframe-holder .mfp-close{top:-40px}.mfp-iframe-scaler{width:100%;height:0;overflow:hidden;padding-top:56.25%}.mfp-iframe-scaler iframe{position:absolute;display:block;top:0;left:0;width:100%;height:100%;box-shadow:0 0 8px rgba(0,0,0,.6);background:#000}img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;box-sizing:border-box;padding:40px 0 40px;margin:0 auto}.mfp-figure{line-height:0}.mfp-figure:after{content:'';position:absolute;left:0;top:40px;bottom:40px;display:block;right:0;width:auto;height:auto;z-index:-1;box-shadow:0 0 8px rgba(0,0,0,.6);background:#444}.mfp-figure small{color:#bdbdbd;display:block;font-size:12px;line-height:14px}.mfp-figure figure{margin:0}.mfp-bottom-bar{margin-top:-36px;position:absolute;top:100%;left:0;width:100%;cursor:auto}.mfp-title{text-align:left;line-height:18px;color:#f3f3f3;word-wrap:break-word;padding-right:36px}.mfp-image-holder .mfp-content{max-width:100%}.mfp-gallery .mfp-image-holder .mfp-figure{cursor:pointer}@media screen and (max-width:800px) and (orientation:landscape),screen and (max-height:300px){.mfp-img-mobile .mfp-image-holder{padding-left:0;padding-right:0}.mfp-img-mobile img.mfp-img{padding:0}.mfp-img-mobile .mfp-figure:after{top:0;bottom:0}.mfp-img-mobile .mfp-figure small{display:inline;margin-left:5px}.mfp-img-mobile .mfp-bottom-bar{background:rgba(0,0,0,.6);bottom:0;margin:0;top:auto;padding:3px 5px;position:fixed;box-sizing:border-box}.mfp-img-mobile .mfp-bottom-bar:empty{padding:0}.mfp-img-mobile .mfp-counter{right:5px;top:3px}.mfp-img-mobile .mfp-close{top:0;right:0;width:35px;height:35px;line-height:35px;background:rgba(0,0,0,.6);position:fixed;text-align:center;padding:0}}@media all and (max-width:900px){.mfp-arrow{-webkit-transform:scale(.75);transform:scale(.75)}.mfp-arrow-left{-webkit-transform-origin:0;transform-origin:0}.mfp-arrow-right{-webkit-transform-origin:100%;transform-origin:100%}.mfp-container{padding-left:6px;padding-right:6px}}
+
+#hero-modal {
+    max-width: 760px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#hero-modal img {
+    margin: 0 auto;
+}
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+    opacity: 0;
+  
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+  }
+  /* overlay animate in */
+  .mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.8;
+  }
+  /* overlay animate out */
+  .mfp-fade.mfp-bg.mfp-removing {
+    opacity: 0;
+  }
+
+/*
+ * aszeto@8/11/2020
+ * ADA Pass
+*/
+
+a:focus-visible {
+    box-shadow: 0 0 0 2px #12627b;
+}
+
+/* section highlight recolors */
+body.home.default.page header a:focus-visible {
+    box-shadow: 0 0 0 2px white;
+}
+
+/* padding resets */
+div.logo a:focus-visible, li.menu-item-type-post_type a:focus-visible {
+    line-height: initial !important;
+    padding: 4px !important;
+}
+
+/* front page menu items */
+div.menu-items a.menu-item:focus-visible {
+    box-shadow: none;
+}
+div.menu-items a.menu-item:focus-visible h3 {
+    line-height: initial !important;
+    box-shadow: 0 0 0 2px #12627b;
+}
+
+/* front page specials */
+a.special:focus-visible {
+    box-shadow: none;
+}
+
+a.special:focus-visible p.link {
+    line-height: initial !important;
+    box-shadow: 0 0 0 2px white;
+}
+
+footer a:focus-visible {
+    line-height: initial !important;
+    padding: 4px !important;
+    box-shadow: 0 0 0 2px white;
+}
+
+/*
+ * Adil @09/21/2020
+ * ADA Pass
+*/
+
+a.default:focus {
+	color: #B9500B;
+}
+@media screen and (min-width: 1200px) {
+	.main-nav > ul > li > a:focus {
+ 	   	color: #F15A29;
+		outline: none;
+	}	
+	body.home header .main-nav > ul > li > a:focus {
+    	opacity: 0.65;
+	}
+}
+footer a:focus {
+	color: #B6E9F9 !important;
+}
+.location-top-bar a:focus {
+    background-color: #094F65;
+}
+.button a:focus, body.single-locations .location-single .location-buttons .button-group #ot-reservation-widget .ot-button a:focus, .main-nav > ul:last-child > li > a:focus, body.single-locations .location-single .location-buttons .button-group #ot-reservation-widget .ot-button:focus {
+    background-color: #DF3D08;
+}
+
+body.single-locations .location-single .location-specials .special:focus p.link:after {
+	transform: translateX(0);
+}
+.menus .menu-category:focus-within .thumbnail {
+    transform: scale(0.95);
+}
+.menus .menu-category:focus-within .thumbnail img {
+	transform: scale(1.15);
+}
+.menus .menu-category:focus-within .thumbnail .overlay {
+	opacity: 1;
+}
+
+/* Alex@10/08/2020 Home page award logo */
+.page-homepage .awards-logo {
+position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    background: url(https://www.eltorito.com/wp-content/uploads/2020/10/oc-best-of-badge.png) no-repeat;
+    background-size: contain;	
+}
+
+@media screen and (min-width: 1024px) {
+	.page-homepage .awards-logo {
+		width: 200px;
+		height: 200px;
+	}
+}
+
+/*
+ * aszeto@12/14/2020
+ * Smaller Image/Content Row variant on home page
+*/
+.content-module.content-row.image-content.smaller .image-container img {
+    width: 440px;
+    border-radius: 4px;
+}
+
+.content-module.content-row.image-content.smaller .image-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .content-module.content-row.image-content.smaller .l-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: -70px;
+    }
+
+    .content-module.content-row.image-content.smaller .image-container {
+        display: block;
+        margin-right: 50px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .content-module.content-row.image-content.smaller .l-wrapper {
+        padding-left: 120px;
+        justify-content: flex-start;
+    }
+    
+    .content-module.content-row.image-content.smaller .image-container {
+        flex-basis: auto;
+    }
+}
+/* TEMP for Holiday Special  */
+#holiday-special-modal .modal-content { max-width: 500px;}
+#holiday-special-modal .close { color: #fff; } 
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .home .content-module.content-row.image-content.smaller .image-container {
+        display: unset;
+    }
+    .home section.content-module.content-row.image-content.smaller.fade-active .content-container
+    {
+        margin-top:20px;
+    }
+}
+
+/****** Saturday Breakfast Start  ***********/
+
+.page-id-1497 .s-wrapper {
+    padding: 0;
+    max-width: 100%;
+}
+.page-id-1497 .l-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.page-id-1497 .menu-item {
+    flex: 0 1 calc(25% - 15px) ;
+    flex-basis: calc(25% - 15px) ;
+    margin-right: 15px;
+}
+
+.page-id-1497 .menu-item h2 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .page-id-1497 .menu-item {
+        flex: 0 1 calc(50% - 10px);
+        flex-basis: calc(50% - 10px);
+        margin-right: 10px;
+    }
+}
+
+/****** Saturday Breakfast End  ***********/
+
+.single-specials .special--wrapper.with-background h1{
+    padding:10px;
+}
+
+/****** Term  & Condition  ***********/
+.page-id-2356 section.content-module.editor .s-wrapper {
+    padding: 0 20px;
+}
+
+div.details .inline-ul li {
+    width: 50%;
+    float: left;
+    list-style: none;
+}
+div.details ul.inline-ul-locations { overflow: hidden;}
+div.details ul.inline-ul-locations li {
+    width: 50%;
+    float: left;
+    list-style: circle;
+}
+
+ .home main.ns-fade section:nth-child(2) .image-container {
+    max-width: 463px;
+}
+/*
+.home main.ns-fade section:nth-child(2) .content-container {
+    max-width: 100%;
+    text-align: center;
+} */
+
+
+.home .menu-items .all-menus .thumbnail {
+ background: #12627B !important;   
+}
+.home .specials-grid > a {
+    background: #F5A81D !important;
+}
+
+
+.home .hero-home .bg-image {
+    background: url(https://www.eltorito.com/wp-content/uploads/2022/06/ET_NewSeasonal_1900x670_3.22.jpg) no-repeat center !important;
+    background-size: cover !important;
+    background-position: right !important;
+}
+
+.footer-tiles {
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .main-nav > ul:first-child {
+        flex: 0 1 856px;
+    }
+    }
+
+.home section.hero.hero-home.static.fade-active h1 {
+    font-size: 45px;
+    line-height: 1.3;
+}
+
+.home section.hero.hero-home.static.fade-active h1 div {
+    line-height: 1.9 !important;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-cta .content h2 {
+        font-size: 40px;
+        line-height: 47px;
+    }
+}
+
+@media screen and (max-width: 997px) {
+    .home section.hero.hero-home.static.fade-active h1 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+    .home section.hero.hero-home.static.fade-active h1 div {
+        line-height: 1.9 !important;
+        font-size: 22px !important;
+    }
+    }

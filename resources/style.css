@@ -1,0 +1,774 @@
+html {
+    background-color: rgb(250,247,243);
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'alfa slab one', cursive; 
+    color: #12627B;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #745545;
+}
+
+.button{
+    padding: 1rem;
+    border-radius: .5rem; 
+    background-color:#f15a29;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+/* header */
+
+header {
+    color: white;
+    height: auto;
+    width: 100%;
+
+}
+
+
+
+header .banner {
+    display: flex;
+    background-color: rgb(45,97,120) !important;   
+    height: 3rem;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.banner p {
+    color: white !important;
+   
+}
+
+.hero {
+    
+    height: 900px;
+    width: 100%;
+    
+}   
+
+.hero .background{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./Images/Images/tacos3.webp);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.nav-bar{
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    z-index: 2;
+
+}
+
+.nav-bar-left{
+    display: flex;
+    padding-top: 1rem;
+    width: 67%;
+    height: 5rem;
+    justify-content: left;
+    align-items: center;
+    z-index: 3;
+
+}
+
+ul li{
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.nav-bar-right{
+    display: flex;
+    height: 5rem;
+    padding-top: 1rem;
+    width: 33%;
+    align-items: start;
+    justify-content: end;
+    padding-right: 2rem;
+    z-index: 3;
+}
+
+.nav-bar-right li.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-title-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-title {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    height: 25rem;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.center-title h2, .center-title h1, .center-title p {
+    color: white;
+    text-align: center;
+    margin:.5rem;
+    text-transform: uppercase;
+}
+
+.center-title h2, .center-title h1 {
+letter-spacing: .5rem;
+}
+
+.center-title h1 {
+    font-size: 2.5rem;
+}
+
+.center-title h2 {
+    font-size: 1.4rem;
+}
+
+.center-title .button{
+    width: 10rem !important;
+}
+
+
+
+
+.overlay {
+    position: absolute;
+    top: 3rem;
+    background-color: black;
+    opacity: .5;
+    width: 100%;
+    height: 56.25rem;
+    z-index: 0;
+}
+
+@media only screen and (max-width: 1250px){
+    .nav-bar {
+    flex-direction: column;   
+    text-align: center;
+    vertical-align: middle;
+    }
+
+    .center-title h1 {
+        font-size: 2.25rem;
+    }
+    
+    .center-title h2 {
+        font-size: 1.75rem;
+    }
+    
+}
+
+
+/* section 1 - visit us */
+
+.visit-us {
+    display: flex;
+    margin-right: 25rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.visitimg, .visittxt{
+    width: 28.9375rem;
+    height: 18.086rem;
+    margin-right: 7rem;
+}
+
+.visitimg {
+    flex-shrink: 0;
+}
+
+.visitimg img{
+    height: 100%;
+    width: 100%;
+ 
+}
+
+.visittxt {
+    font-size: 1.5rem;
+}
+
+.visittxt .button {
+    font-size: 1.125rem;
+    width: 13rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1250px) {
+    .visit-us {
+        margin-right: 0;
+        flex-direction: column;
+    }
+    .visittxt {
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .visitimg, .visittxt {
+        margin-right: 0;
+    }
+
+    .visit-us .button {
+        width: 50%;
+    }
+
+    .visittxt {
+        font-size: 1.1666666666rem;
+    }
+}
+
+/* section 2 - Fresh Ingredients */
+
+.fresh-ingredients{
+    display: flex;
+    margin-right: 0rem;
+    margin-top: 5rem;
+    width: 100%;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text-left {
+    display: flex;
+    width: 32rem;
+    height: 100%;
+    justify-content: center;
+    align-items: start;
+}
+
+.text-left-inside {
+    width: 60%;
+    height: 50%;
+}
+
+.text-left-inside h2 {
+    font-size: 2.25rem;
+}
+.text-left-inside p {
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.text-left-inside .button{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.pictures-right {
+    height: 40rem;
+    width: 50rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menuimage {
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.menuimage img{
+    height: 15rem;
+    width: 15rem;
+}
+
+
+#allmenus {
+    background-color: #12627B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#allmenus h2 {
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.pictures-right p {
+    color: #12627b;
+    font-size: 1.25rem;
+    font-family: "Nunito sans", sans-serif;
+    text-transform: uppercase;
+
+
+}
+
+@media only screen and (max-width: 1250px) {
+    .fresh-ingredients{
+        flex-direction: column;
+        margin-top: 5rem;
+        height: auto;
+        width: 100%;
+    }
+    .text-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 0rem;
+
+    }
+
+    .text-left-inside {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text-left-inside .button {
+        width: 50%;
+    }
+
+    .pictures-right {
+        width: 80%;
+        height: 60rem;
+    }
+    
+    .text-left-inside h2 {
+        font-size: 1.75rem;
+    }
+    
+}
+    @media only screen and (max-width: 600px) {
+        .pictures-right {
+            height: auto;
+        }
+
+        .menuimage {
+            margin: 2rem;
+        }
+    }
+
+/* section 3 - Specials */
+
+.specials { 
+        display: flex;
+        margin-top: 5rem;
+        width: 100%;
+        height: 40rem;
+        align-items: center;
+        justify-content: center;
+}
+
+.specialscontainer h2 {
+    text-align: center;
+    margin-bottom: 3.5rem;
+    font-size: 2.5rem;
+}
+
+.specialscontainer {
+    width: 75rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.specialscontainer2 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+}
+
+.happy-hour, .saturday-breakfast, .xperience-rewards {
+    background-color: rgb(234,171,66);
+    height: 25rem;
+    width: 20rem;
+    line-height: 1.75;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 1.5rem;
+}
+
+.specialscontainer2 p, .specialscontainer2 h3 {
+    color: white;
+}
+
+.specialscontainer2 h3 {
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1250px){
+    .specials {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .specialscontainer {
+        width: 100%;
+        height: auto;
+    }
+
+    .specialscontainer2 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .happy-hour{
+        margin-bottom: 3rem;
+    }
+
+    .saturday-breakfast {
+        margin-bottom: 3rem;
+    }
+
+    .specialscontainer h2 {
+        font-size: 1.75rem;
+    }
+
+    .specialscontainer2 h3 {
+        font-size: 1.25rem;
+    }
+
+}
+
+/* section 4 - Celebration */
+
+.celebration {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.celebrateimage {
+    height: auto;
+    width: 50%;
+}
+
+.celebrateimage img{
+    height: 90%;
+    width: 90%;
+}
+
+.celebratetxt{
+    width: 15%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: left;
+    flex-direction: column;
+    margin-right: 25rem;
+}
+
+.celebratetxt p {
+    line-height: 2;
+    font-size: 1.125rem;
+}
+
+.celebratetxt h2 {
+    font-size: 2.5rem;
+    margin: 0;
+} 
+
+.celebratetxt .button {
+    width: 13rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+
+} 
+
+@media only screen and (max-width: 1250px){
+    .celebration{
+        flex-direction: column;        
+    }
+
+    .celebrateimage {
+        margin-top: 5rem;
+    }
+
+    .celebratetxt {
+        width: 80%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .celebratetxt h2 {
+        font-size: 1.75rem;
+        margin: 0;
+    } 
+
+}
+
+/* section 5 - Catering */
+
+.catering {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.cateringimage {
+    height: auto;
+    width: 50%;
+}
+
+.cateringimage img{
+    height: 90%;
+    width: 90%;
+}
+
+.cateringtxt{
+    width: 15%;
+    display: flex;
+    justify-content: start;
+    align-items: left;
+    flex-direction: column;
+    margin-right: 5rem;
+    margin-left: 20rem;
+}
+
+.cateringtxt p {
+    line-height: 2;
+    font-size: 1.125rem;
+}
+
+.cateringtxt h2 {
+    font-size: 2.5rem;
+    margin: 0;
+} 
+
+.cateringtxt .button {
+    width: 13rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+
+} 
+
+
+@media only screen and (max-width: 1250px){
+    .catering {
+        flex-direction: column;
+    }
+    
+    .cateringtxt{
+        width: 80%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .catering img {
+        margin-top: 3rem;
+    }
+
+    .cateringtxt h2 {
+        font-size: 1.75rem;
+    } 
+}
+
+/* section 6 - Footerbanner */
+
+.footerbanner h2 {
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    text-align: center;
+} 
+
+@media only screen and (max-width: 1250px){
+    .footerbanner h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* section 7 - Photos */
+
+.photos {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#photo1, #photo2, #photo3, #photo4 {
+    height: auto;
+    width: 25%;
+    margin-bottom: 0rem;
+    display: flex;
+    align-items: end;
+   
+}
+
+img.img1 {
+    width: 100%;
+    height: 100%;
+}
+
+/* section 8 - Footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(45,96,120);
+}
+
+.footersec1 {
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    color: white;
+    line-height: 4;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+
+.footersec1right, .footersec1left {
+    width: 50%;
+    height: 100%;
+    margin-top: 5rem;
+}
+
+.footersec1left {
+    margin-left: 5rem;
+}
+
+.footersec1left img{
+    height: auto;
+    width: 20rem;
+}
+
+.footersec1right {
+    margin-right: 5rem;
+    display: flex;
+    justify-content: right;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.div1, .div2, .div3 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5rem;
+}
+
+.footersec2 {
+    color: white;
+}
+
+.footersec2 li {
+    margin-right: 2rem;
+}
+
+.footersec3{
+    text-align: center;
+}
+
+.footersec3 p {
+    color: white;
+    padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1250px) {
+    .footersec1 {
+        line-height: 2;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footersec1right {
+        width: 100%;
+        margin:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .footersec2 ul{
+        flex-direction: column;
+        line-height: 2;
+    }
+}
+
+
+/*.pictures-right img {
+    height: 15rem;
+    width: 15rem;
+
+}
+
+.inside1, .inside2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+}*/

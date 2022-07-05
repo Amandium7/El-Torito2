@@ -1,0 +1,34 @@
+.html {
+    width: 100%;
+    height: 500rem;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box1, .box2, .box3, .box4 {
+    width: 15rem;
+    height: 15rem;
+}
+
+.box1 {
+    background-color: gray;
+}
+
+.box2 {
+    background-color: green;
+}
+
+.box3 {
+    background-color: brown;
+}
+
+.box4 {
+    background-color: black;
+}
